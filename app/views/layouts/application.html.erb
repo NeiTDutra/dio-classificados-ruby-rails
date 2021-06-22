@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div class="container text-center align-items-center justify-content-center">
+    <div class="container text-center align-items-center justify-content-center pt-2">
       <p class="text-white bg-warning"> 
         ... 
         <% if user_signed_in? %>
@@ -22,7 +22,7 @@
 
       <nav>
         <p>
-          <%= link_to "Home", root_path %>
+          <%= link_to t("menu.home"), root_path %>
           |
         <% if user_signed_in? %>
           <%= link_to t("menu.logout"), sign_out_sessions_path, method: :delete %>
