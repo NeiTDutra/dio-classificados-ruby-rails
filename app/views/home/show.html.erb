@@ -2,26 +2,29 @@
 <hr>
 
 <div class="row bg-success pt-3">
-
-  <% @ads.each do |ad| %>
-    <div class="col-sm-3 mb-4">
-      <div class="card h-100">
-        <div class="card-header bg-ligth border-secondary">
-          <% if user_signed_in? %>
-            <p><%= link_to "Editar", edit_ad_path(ad) %></p>
-          <% else %>
-            <p>Off!!</p>
-          <% end %>
-        </div>
-        <div class="card-body text-white bg-secondary">
-          <h5 class="card-title"><%= ad.title %></h5>
-          <p class="card-text"><%= ad.description %></p>
-        </div>
-        <div class="card-footer bg-ligth border-secondary">
-          <p class="text-danger"><strong>$ <%= ad.prince %></strong></p>
+  <% if @ads %>
+    <% @ads.each do |ad| %>
+      <div class="col-sm-3 mb-4">
+        <div class="card h-100">
+          <div class="card-header bg-ligth border-secondary">
+            <% if user_signed_in? %>
+              <p><%= link_to "Editar", edit_ad_path(ad) %></p>
+            <% else %>
+              <p>Off!!</p>
+            <% end %>
+          </div>
+          <div class="card-body text-white bg-secondary">
+            <h5 class="card-title"><%= ad.title %></h5>
+            <p class="card-text"><%= ad.description %></p>
+          </div>
+          <div class="card-footer bg-ligth border-secondary">
+            <p class="text-danger"><strong>$ <%= ad.prince %></strong></p>
+          </div>
         </div>
       </div>
-    </div>
+    <% end %>
+  <% else %>
+    <p class="text-danger">Nothing to do!</p>
   <% end %>
 
 </div>
