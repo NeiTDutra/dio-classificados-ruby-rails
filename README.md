@@ -11,6 +11,14 @@ Projeto do curso de desenvolvimento com Ruby e Rails
 Bifurcado de [duduribeiro /
 dio_curso](https://github.com/duduribeiro/dio_curso)
 
+## Basic
+
+Instruções básicas de projeto Ruby [aqui](https://github.com/NeiTDutra/dio-classificados-ruby-rails/blob/master/README_UP_RUN.md)
+
+## Implantação
+
+Implantado no Heroku neste [link](https://classificados-ruby.herokuapp.com/)
+
 ## Modificações
 
 - Usando db sqlite3 no desenvolvimento:
