@@ -11,8 +11,8 @@ require("channels")
 //require ("jquery") 
 //require ("jquery_ujs") 
 //require ("bootstrap-sprockets")
-import 'bootstrap';
-import '../stylesheets/application';
+require('bootstrap');
+require('../stylesheets/application');
 //require ("bootstrap"); 
 //= require jquery3
 //= require popper
