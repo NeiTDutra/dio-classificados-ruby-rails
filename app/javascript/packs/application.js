@@ -12,7 +12,7 @@ require("channels")
 //require ("jquery_ujs") 
 //require ("bootstrap-sprockets")
 require('bootstrap');
-require('../stylesheets/application');
+//require('../stylesheets/application');
 //require ("bootstrap"); 
 //= require jquery3
 //= require popper
